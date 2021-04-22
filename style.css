@@ -1,1 +1,38 @@
-﻿
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*===== Information Section =====*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.infoBlocks {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*===== Testimonials Section =====*/
+
+/*Hugo, if you'd like to style your section?*/
+
+
+
+
+
+
+
+
+/*===== Footer Section =====*/
+
+footer {
+    display: inline;
+    text-align: center;
+}
