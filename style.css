@@ -1,38 +1,50 @@
 ﻿* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 
 /*===== Information Section =====*/
 
 .info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .infoBlocks {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 /*===== Testimonials Section =====*/
 
 /*Hugo, if you'd like to style your section?*/
 
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 15px 0;
+}
 
-
-
-
-
+.testimonial p:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /*===== Footer Section =====*/
 
 footer {
-    display: inline;
-    text-align: center;
+  display: inline;
+  text-align: center;
+  height: 10vh;
 }
