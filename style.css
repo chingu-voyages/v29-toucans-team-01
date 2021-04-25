@@ -4,22 +4,44 @@
   margin: 0;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*===== Information Section =====*/
 
 .info {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 40px 0;
+}
+
+.infoSubHeading {
+    padding: 10px;
 }
 
 .infoBlocks {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+}
+
+.infoBlock {
+    width: 200px;
+    padding: 20px;
+}
+
+.infoBlock h4 {
+   padding-bottom: 10px;
+}
+
+.infoIcon {
+    font-size: 3em;
+    color: #117dbf;
 }
 
 /*===== Testimonials Section =====*/
-
-/*Hugo, if you'd like to style your section?*/
 
 .testimonials-container {
   display: flex;
