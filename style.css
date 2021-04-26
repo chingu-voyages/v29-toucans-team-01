@@ -19,7 +19,7 @@ html {
 
 .infoSubHeading {
   padding: 5px 0 0 10px;
-  width: 50%;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -31,23 +31,42 @@ html {
 }
 
 .infoBlock {
-  width: 200px;
+  width: 250px;
   padding: 20px;
+  text-align: left;
+  margin: 20px;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.a {
+  background-image: linear-gradient(-45deg, #117dbf, #0a4970);
+}
+
+.b {
+  background-image: linear-gradient(-45deg, #43afd9, #1b7ea5);
+}
+
+.c {
+  background-image: linear-gradient(-45deg, #f2d338, #caad1c);
 }
 
 .infoBlock h4 {
-  padding-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
 }
 
 .infoBlock p {
-  padding-top: 20px;
+  padding-top: 10px;
+  font-weight: 100;
+  line-height: 20px;
 }
 
 .infoIcon {
-  font-size: 3em;
-  color: #117dbf;
-  border: 4px double #f2d338;
-  border-style: double;
+  font-size: 1.5em;
+  color: #fff;
   padding: 10px;
   border-radius: 50%;
   
