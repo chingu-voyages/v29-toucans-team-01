@@ -14,17 +14,20 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
 .infoSubHeading {
-  padding: 10px;
+  padding: 5px 0 0 10px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .infoBlocks {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding-top: 20px;
 }
 
 .infoBlock {
@@ -33,12 +36,22 @@ html {
 }
 
 .infoBlock h4 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.infoBlock p {
+  padding-top: 20px;
 }
 
 .infoIcon {
   font-size: 3em;
   color: #117dbf;
+  border: 4px double #f2d338;
+  border-style: double;
+  padding: 10px;
+  border-radius: 50%;
+  
+
 }
 
 /*===== Testimonials Section =====*/
@@ -87,7 +100,10 @@ html {
 /*===== Footer Section =====*/
 
 footer {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 10vh;
+  height: 40px;
+  background-color: #f2d3385b;
 }
