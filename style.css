@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*===== Information Section =====*/
@@ -18,7 +18,7 @@ html {
 }
 
 .infoSubHeading {
-    padding: 10px;
+  padding: 10px;
 }
 
 .infoBlocks {
@@ -28,17 +28,17 @@ html {
 }
 
 .infoBlock {
-    width: 200px;
-    padding: 20px;
+  width: 200px;
+  padding: 20px;
 }
 
 .infoBlock h4 {
-   padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .infoIcon {
-    font-size: 3em;
-    color: #117dbf;
+  font-size: 3em;
+  color: #117dbf;
 }
 
 /*===== Testimonials Section =====*/
@@ -46,21 +46,42 @@ html {
 .testimonials-container {
   display: flex;
   flex-direction: column;
+  padding: 15px 0;
   text-align: center;
-  justify-content: space-around;
-  width: 50%;
-  margin: auto;
 }
 
-.testimonial {
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.testimonial-block {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.testimonial-block .img-container img {
+  width: 300px;
+  height: auto;
+}
+
+.testimonial-block .quote {
   display: flex;
   flex-direction: column;
-  margin: 15px 0 15px 0;
+  justify-content: center;
+  width: 300px;
+  padding: 0 20px;
+  background-color: #0d518c;
+  height: 100%;
 }
 
-.testimonial p:nth-child(2) {
-  display: flex;
-  justify-content: flex-end;
+.testimonial-block .quote p {
+  text-align: right;
+  padding: 15px 10px;
 }
 
 /*===== Footer Section =====*/
