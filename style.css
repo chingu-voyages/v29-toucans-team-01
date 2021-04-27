@@ -1,1 +1,128 @@
-﻿
+﻿* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*===== Information Section =====*/
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.infoSubHeading {
+  padding: 10px 0 0 10px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.infoBlocks {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-top: 20px;
+}
+
+.infoBlock {
+  width: 280px;
+  padding: 20px;
+  text-align: left;
+  margin: 10px;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.a {
+  background-image: linear-gradient(-45deg, #117dbf, #0a4970);
+}
+
+.b {
+  background-image: linear-gradient(-45deg, #43afd9, #1b7ea5);
+}
+
+.c {
+  background-image: linear-gradient(-45deg, #f2d338, #caad1c);
+}
+
+.infoBlock h4 {
+  padding-top: 10px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
+}
+
+.infoBlock p {
+  padding-top: 10px;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.infoIcon {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  
+
+}
+
+/*===== Testimonials Section =====*/
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.testimonial-block {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.testimonial-block .img-container img {
+  width: 300px;
+  height: auto;
+}
+
+.testimonial-block .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 0 20px;
+  background-color: #0d518c;
+  height: 100%;
+}
+
+.testimonial-block .quote p {
+  text-align: right;
+  padding: 15px 10px;
+}
+
+/*===== Footer Section =====*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  background-color: #f2d3385b;
+}
