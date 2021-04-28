@@ -1,4 +1,4 @@
-﻿* {
+﻿﻿* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -125,4 +125,124 @@ footer {
   text-align: center;
   height: 40px;
   background-color: #f2d3385b;
+}
+﻿@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+body{
+    margin:0;
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2D338;
+}
+
+.header-title{
+    margin-left:10px;
+    color: #071A40;
+}
+
+.btn {
+    padding: 0 15px 0 15px; 
+    
+}
+.login-button{
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.banner-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 25px;
+}
+
+.banner p:nth-child(1){
+    font-family: 'Orelega One', cursive;
+    font-size: 3rem;
+    color: #0D518C;
+    padding-top: 2rem;
+    /* margin-bottom: -10px; */
+}
+
+/*.banner p:nth-child(2) {
+    font-family: 'Orelega One', cursive;
+    font-size: 3rem;
+    color:rgb(101, 136, 211);
+    
+}*/
+
+.banner p:nth-child(2) {
+    font-family: 'Orelega One', cursive;
+    font-size: 2rem;
+    color: #0D518C;;
+    margin-top: 30px;
+}
+
+
+img{
+    border-radius: 10px;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.searchbar input{
+    width: 70%;
+}
+
+.signup-grid {
+    width:99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.student-signup-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 15px;
+    background-color: #43afd965;
+    font-size: 1.5rem;
+    color: #0D518C;
+    
+}
+
+.middle-border{
+    border-right:1px solid black; ;
+
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-footer{
+    border-top: none;
 }
