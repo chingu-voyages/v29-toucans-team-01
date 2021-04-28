@@ -1,12 +1,14 @@
-﻿﻿* {
+﻿@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /*===== Information Section =====*/
 
@@ -116,25 +118,7 @@ html {
   padding: 15px 10px;
 }
 
-/*===== Footer Section =====*/
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 40px;
-  background-color: #f2d3385b;
-}
-﻿@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-body{
-    margin:0;
-    font-size: 16px;
-}
-
-*{
-    box-sizing: border-box;
-}
+/* === Header section === */
 
 .header-grid{
     width: 100%;
@@ -149,6 +133,8 @@ body{
     color: #071A40;
 }
 
+/* === Login-In button section === */
+
 .btn {
     padding: 0 15px 0 15px; 
     
@@ -158,6 +144,8 @@ body{
     margin-right: 20px;
 }
 
+/* === Banner section === */
+
 .banner-grid {
     width: 100%;
     display: flex;
@@ -166,7 +154,6 @@ body{
     margin-top: 20px;
 
 }
-
 
 .banner {
     display: flex;
@@ -180,15 +167,7 @@ body{
     font-size: 3rem;
     color: #0D518C;
     padding-top: 2rem;
-    /* margin-bottom: -10px; */
 }
-
-/*.banner p:nth-child(2) {
-    font-family: 'Orelega One', cursive;
-    font-size: 3rem;
-    color:rgb(101, 136, 211);
-    
-}*/
 
 .banner p:nth-child(2) {
     font-family: 'Orelega One', cursive;
@@ -197,10 +176,12 @@ body{
     margin-top: 30px;
 }
 
-
 img{
     border-radius: 10px;
 }
+
+/* === searchbar section === */
+
 .searchbar{
     display: flex;
     flex-direction: row;
@@ -209,6 +190,8 @@ img{
 .searchbar input{
     width: 70%;
 }
+
+/* === sign-up section for the tutor and stundent === */
 
 .signup-grid {
     width:99%;
@@ -239,10 +222,23 @@ img{
 
 }
 
+/* === modal section === */
+
 .modal-header{
-    border-bottom: none;
+    border-bottom:none;
 }
 
 .modal-footer{
-    border-top: none;
+    border-top:none;
+}
+
+/*===== Footer Section =====*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  background-color: #f2d3385b;
 }
