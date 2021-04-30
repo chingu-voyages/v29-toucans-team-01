@@ -242,3 +242,13 @@ footer {
   height: 40px;
   background-color: #f2d3385b;
 }
+
+/* === Student Page styles === */
+
+.studentHeader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px;
+}
+
