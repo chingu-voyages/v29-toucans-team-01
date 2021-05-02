@@ -1,6 +1,15 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 html {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+ body{
+   /* == Keeps the footer on the bottom == */ 
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
 }
 
 *{
@@ -237,18 +246,93 @@ img{
 footer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  align-content: center;
   text-align: center;
   height: 40px;
   background-color: #f2d3385b;
+  margin-top: auto;  /* == Keeps footer at the bottom ==*/
 }
 
 /* === Student Page styles === */
 
-.studentHeader{
-  width: 100%;
+.logoBackground{
+  background-color: #caad1c;
+}
+
+.sectionTitle h1{
+font-size: 1.5rem;
+}
+
+.student-part{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0 20px;
+}
+
+
+
+.myStudyVideos h1{
+  text-align: center;
+}
+ 
+
+.video-part{
+  width: 100%;
+  padding: 5px;
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgb(221, 218, 218);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+
+}
+
+figcaption{
+  text-align: center;
+}
+
+.tutorRecs{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.tutorRecs h1{
+  text-align: center;
+}
+.tutorRecVideos{
+  width: 66.5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  padding: 10px 0 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; 
+  background-color: rgb(221, 218, 218);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 1395px) {
+  .myStudyVideos h1{
+    text-align: left;
+  }
+  .myTutorProfileSection{
+    margin-right: 10px;
+  }
+  .tutorRecVideos{
+    box-shadow: none;
+  }
+  .video-part{
+    box-shadow: none;
+  }
 }
 

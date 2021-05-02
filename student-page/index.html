@@ -1,130 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Student Page</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Student Page</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" />
 
-</head>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="header-grid">
-                <div class="header-title">
-                    <h2>Tutor Me</h2>
+    <body>
+        <header>
+            <nav>
+                <div class="header-grid">
+                    <div class="header-title logoBackground">
+                        <img src="/images/Tutor Me Comp Screen.png" alt="Girl in a jacket">
+                    </div>
+                    <div class="login-button">
+                        <button type="button" class="btn btn btn-light btn-sm text-uppercase" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Log On
+                        </button>
+                    </div>
                 </div>
-                <div class="login-button">
-                    <button type="button" class="btn btn btn-light btn-sm text-uppercase" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Log In
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <div class="studentHeader">
-        <h1>My Study Section</h1>
-    </div>
-
-    <section>
-
-        <div class="myTutorProfileSection">
-            <h5>My Tutor</h5>
-            <div class="card  " style="width: 14rem;">
-                <img src="/images/myTutor.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5>Tom Ford</h5>
-                    <p class="card-text">"Hi, I'm Tom. I'm passionate about the sport of fencing."</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Tom@gmail.com</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Tom's Profile</a>
-                </div>
-            </div>
+        <div class="sectionTitle">
+            <h1>My Study Section</h1>
         </div>
 
-        <div class="myStudyVideos">
-            <h1>My Study Videos</h1>
-            <div class="studentVideo">
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/kTw05gC2T9Y"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption class="videoDescription">Fencing, Explained </figcaption>
+        <section class="student-part">
+
+            <div class="myTutorProfileSection">
+                <div class="card border-warning" style="width: 12rem;">
+                    <h5>My Tutor</h5>
+                    <img src="/images/myTutor.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Tom Ford</h5>
+                        <p class="card-text">"Hi, I'm Tom. I'm passionate about the sport of fencing."</p>
+                        <h5>Tom@gmail.com</h5>
+                        <a href="#" class="card-link">Tom's Profile</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="studentVideo">
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/a8IdfA5fXJs"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption class="videoDescription">How to Fence: The Basics </figcaption>
-            </div>
-            <div class="studentVideo">
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/nuiLjpSF8uw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption class="videoDescription">Women Try Fencing For the First Time </figcaption>
-            </div>
-        </div>
+            <div class="myStudyVideos">
+                <h1>My Study Videos</h1>
+                <div class="video-part">
+                    <div class="studentVideo me-3">
+                        <iframe width="325" height="225" src="https://www.youtube.com/embed/kTw05gC2T9Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <figcaption class="videoDescription">Fencing, Explained </figcaption>
+                    </div>
 
-    </section>
+                    <div class="studentVideo me-3">
+                        <iframe width="325" height="225" src="https://www.youtube.com/embed/a8IdfA5fXJs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <figcaption class="videoDescription">How to Fence: The Basics </figcaption>
+                    </div>
+                    <div class="studentVideo">
+                        <iframe width="325" height="225" src="https://www.youtube.com/embed/nuiLjpSF8uw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <figcaption class="videoDescription">Women Try Fencing For the First Time </figcaption>
+                    </div>
+                </div>
+            </div>
 
-    <section class="tutorRecs">
-        <div class="tutorRecVideos">
+        </section>
+
+        <section class="tutorRecs">
             <h1>Tutor Recommended Videos</h1>
-            <div class="studentVideo">
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/IsOSGG9wbxk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption class="videoDescription">Fencing, Explained </figcaption>
+            <div class="tutorRecVideos">
+                <div class="studentVideo me-2">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/IsOSGG9wbxk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption class="videoDescription">Fencing, Explained </figcaption>
+                </div>
+
+                <div class="studentVideo me-2">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/JGLb3sNQpow"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption class="videoDescription">How to Fence: The Basics </figcaption>
+                </div>
+                <div class="studentVideo">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/JInErQDAuV8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption class="videoDescription">Women Try Fencing For the First Time </figcaption>
+                </div>
             </div>
+        </section>
 
-            <div class="studentVideo">
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/JGLb3sNQpow"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption class="videoDescription">How to Fence: The Basics </figcaption>
-            </div>
-            <div class="studentVideo">
-                <iframe width="350" height="200" src="https://www.youtube.com/embed/JInErQDAuV8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <figcaption class="videoDescription">Women Try Fencing For the First Time </figcaption>
-            </div>
-        </div>
-    </section>
+        <footer>
+            <h5>
+                Tutor Me
+                <script> document.write(new Date().getFullYear());</script>
+            </h5>
+        </footer>
 
-    <footer>
-        <h5>
-            Tutor Me
-            <script> document.write(new Date().getFullYear());</script>
-        </h5>
-    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-
-    <script src="/script.js"></script>
-</body>
+        <script src="/script.js"></script>
+    </body>
 </html>
