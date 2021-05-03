@@ -1,29 +1,31 @@
 ﻿<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5ce1f75036.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="tutor-page.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5ce1f75036.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="tutor-page.css" />
 
     <title>Tutor Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+
         <nav>
-            <div class="header-grid">
-                <div class="header-title">
-                    <h2>Tutor Me</h2>
-                </div>
-                <div class="profile-nav">
-                    <button class="dropbtn"><img src="navigation.jpg"></button>
-                    <div class= "dropdown-content">
-                        <a href="">Edit Profile</a>
-                        <a href="">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <div class="header-grid">
+          <div class="header-title"><h2>Tutor Me</h2></div>
+          <div class="open-menu"><i class="far fa-user-circle"></i></div>
+          <ul id="main-menu">
+            <li><a href="">Edit Profile</a></li>
+            <li><a href="">Logout</a></li>
+            <div class="close-menu"><i class="fa fa-times"></i></div>
+          </ul>
+        </div>
+      </nav>
+       
     </header>
 
     <main>
@@ -64,33 +66,49 @@
                 </div>
             </div>
         </div>
-
         <div class="videos-section">
             <div>
-                <h2 id="video-section-title">My Recommended Videos</h2>
+            <h2 id="video-section-title">My Recommended Videos</h2>
             </div>
             <div class="rec-videos">
-                <div class="video">
-                    <iframe width="450" height="315" src="https://www.youtube.com/embed/KQetemT1sWc" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe width="450" height="315" src="https://www.youtube.com/embed/kijpcUv-b8M" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe width="450" height="315" src="https://www.youtube.com/embed/Y3ywicffOj4" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div class="video">
+                <iframe
+                width="380"
+                height="315"
+                src="https://www.youtube.com/embed/KQetemT1sWc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                ></iframe>
+            </div>
+            <div class="video">
+                <iframe
+                width="380"
+                height="315"
+                src="https://www.youtube.com/embed/kijpcUv-b8M"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                ></iframe>
+            </div>
+            <div class="video">
+                <iframe
+                width="380"
+                height="315"
+                src="https://www.youtube.com/embed/Y3ywicffOj4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                ></iframe>
+            </div>
             </div>
         </div>
 
-        <div id="player"></div>
+      <div id="player"></div>
     </main>
-    <script src=tutor-page.js></script>
-
-</body>
+    <script src="tutor-page.js"></script>
+  </body>
 </html>

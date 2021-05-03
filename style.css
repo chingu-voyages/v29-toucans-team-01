@@ -1,14 +1,13 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+﻿@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 
 /*===== Information Section =====*/
 
@@ -71,8 +70,6 @@ html {
   color: #fff;
   padding: 10px;
   border-radius: 50%;
-  
-
 }
 
 /*===== Testimonials Section =====*/
@@ -120,116 +117,111 @@ html {
 
 /* === Header section === */
 
-.header-grid{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #F2D338;
+.header-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2d338;
 }
 
-.header-title{
-    margin-left:10px;
-    color: #071A40;
+.header-title {
+  margin-left: 10px;
+  color: #071a40;
 }
 
 /* === Login-In button section === */
 
 .btn {
-    padding: 0 15px 0 15px; 
-    
+  padding: 0 15px 0 15px;
 }
-.login-button{
-    margin-top: 8px;
-    margin-right: 20px;
+.login-button {
+  margin-top: 8px;
+  margin-right: 20px;
 }
 
 /* === Banner section === */
 
 .banner-grid {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 .banner {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 25px;
 }
 
-.banner p:nth-child(1){
-    font-family: 'Orelega One', cursive;
-    font-size: 3rem;
-    color: #0D518C;
-    padding-top: 2rem;
+.banner p:nth-child(1) {
+  font-family: "Orelega One", cursive;
+  font-size: 3rem;
+  color: #0d518c;
+  padding-top: 2rem;
 }
 
 .banner p:nth-child(2) {
-    font-family: 'Orelega One', cursive;
-    font-size: 2rem;
-    color: #0D518C;;
-    margin-top: 30px;
+  font-family: "Orelega One", cursive;
+  font-size: 2rem;
+  color: #0d518c;
+  margin-top: 30px;
 }
 
-img{
-    border-radius: 10px;
+img {
+  border-radius: 10px;
 }
 
 /* === searchbar section === */
 
-.searchbar{
-    display: flex;
-    flex-direction: row;
-    width:100%;
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.searchbar input{
-    width: 70%;
+.searchbar input {
+  width: 70%;
 }
 
 /* === sign-up section for the tutor and stundent === */
 
 .signup-grid {
-    width:99%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
-   
+  width: 99%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .student-signup-grid {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0 15px;
-    background-color: #43afd965;
-    font-size: 1.5rem;
-    color: #0D518C;
-    
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 15px;
+  background-color: #43afd965;
+  font-size: 1.5rem;
+  color: #0d518c;
 }
 
-.middle-border{
-    border-right:1px solid black; ;
-
+.middle-border {
+  border-right: 1px solid black;
 }
 
 /* === modal section === */
 
-.modal-header{
-    border-bottom:none;
+.modal-header {
+  border-bottom: none;
 }
 
-.modal-footer{
-    border-top:none;
+.modal-footer {
+  border-top: none;
 }
 
 /*===== Footer Section =====*/
