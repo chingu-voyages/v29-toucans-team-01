@@ -134,7 +134,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: #F2D338; */
+    background-color: #F2D338;
 }
 
 .header-title{
@@ -142,6 +142,10 @@ html {
     color: #071A40;
 }
 
+.profile-pic{
+  border-radius: 50%;
+  padding: 3px 3px;
+}
 /* === Login-In button section === */
 
 .btn {
