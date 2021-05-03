@@ -134,7 +134,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #F2D338;
+    /* background-color: #F2D338; */
 }
 
 .header-title{
@@ -256,27 +256,61 @@ footer {
 
 /* === Student Page styles === */
 
-.logoBackground{
-  background-color: #caad1c;
-}
 
 .sectionTitle h1{
-font-size: 1.5rem;
+text-align: center;
+padding: 0 60px;
+}
+
+.myTutorProfileSection {
+  background-color: #d5efff;
+}
+
+.tutorTitle {
+  text-align: center;
+  padding: 15px 0 10px 0;
+  font-size: 1.75em;
+}
+
+.card {
+  background-color: #fcfcfc00;
+  border: none;
+}
+
+.card-img, .card-img-top {
+  border-radius: 50%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.myStudyVideos {
+  padding: 0 20px;
+}
+
+.myStudyVideos h2 {
+  padding-top: 20px;
+  text-align: center;
 }
 
 .student-part{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 20px 0 20px;
+  justify-content: space-between;
+  margin: 60px 0 20px;
+  background-color: #f0f8ff;
 }
 
-
+.myTutorProfileSection{
+  display:flex;
+  justify-content: center;
+  flex-grow: 1;
+}
 
 .myStudyVideos h1{
   text-align: center;
 }
- 
 
 .video-part{
   width: 100%;
@@ -285,8 +319,7 @@ font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: rgb(221, 218, 218);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
 
 }
@@ -301,21 +334,34 @@ figcaption{
   margin-bottom: 20px;
 }
 
-.tutorRecs h1{
-  text-align: center;
+.TutorTitle{
+ padding: 10px 20px 10px;
+ 
 }
-.tutorRecVideos{
-  width: 66.5%;
+
+.tutorRecs{
+  display: flex;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px 0 60px 0;
+}
+
+.tutorRecs h1{
+  text-align: left;
+  padding: 20px;
+}
+
+.tutorRecVideos{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; 
-  background-color: rgb(221, 218, 218);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  /* background-color: rgb(221, 218, 218); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
 }
 
