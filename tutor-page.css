@@ -10,12 +10,12 @@ html {
 }
 
 .header-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 2px;
-    background-color: #F2D338;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2px;
+  background-color: #f2d338;
+  align-items: center;
 }
 
 .header-title {
@@ -44,11 +44,11 @@ html {
   padding: 30px;
   /* border: 1px solid green; */
 }
-.student-subtitle{
-    background-color: #0D518C;
-    color: white;
-    font-weight: bold;
-    padding-bottom: 20px;
+.student-subtitle {
+  background-color: #0d518c;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
 }
 #subtitle {
   padding: 20px;
@@ -70,54 +70,55 @@ html {
 }
 
 .profile-image img {
-
-    width: 150px;
-    height: auto;
-    border-radius: 50%; 
-    position: relative;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  position: relative;
 }
 
 .profile-image span {
-    position: absolute;
-    z-index: 5;
-    top: 390px;
-    font-size: 30px;  
+  position: relative;
+  z-index: 2;
+  left: 50px;
+  font-size: 30px;
 }
 
 .profile-image span:hover {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .student-section-title {
-    text-align: center;
-    color: #0D518C;
- 
+  text-align: center;
+  color: #0d518c;
 }
-
 
 .videos-section {
-    background-color: #43AED9;
-    color: white;
-    font-weight: bold;
+  background-color: #43aed9;
+  color: white;
+  font-weight: bold;
 }
 #video-section-title {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 20px;
-
-}
-
-.rec-videos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .video {
-  padding: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: 0;
+  margin: 20px 0;
 }
 
-@media (max-width: 800px) {
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
   #main-menu {
     position: fixed;
     height: 100vh;
@@ -155,5 +156,14 @@ html {
 
   .open-menu {
     /* display: none; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .rec-videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
