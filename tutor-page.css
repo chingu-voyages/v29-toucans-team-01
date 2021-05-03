@@ -67,6 +67,8 @@ html {
 .profile-image p {
   text-align: center;
   margin: 20px 0 20px 0;
+  position: relative;
+  left: 20px;
 }
 
 .profile-image img {
@@ -78,9 +80,9 @@ html {
 
 .profile-image span {
   position: relative;
+  font-size: 30px;
   z-index: 2;
   left: 50px;
-  font-size: 30px;
 }
 
 .profile-image span:hover {
@@ -90,6 +92,7 @@ html {
 .student-section-title {
   text-align: center;
   color: #0d518c;
+  padding: 30px;
 }
 
 .videos-section {
@@ -98,16 +101,14 @@ html {
   font-weight: bold;
 }
 #video-section-title {
-  /* margin-top: 20px; */
   padding: 20px;
 }
 
 .video {
+  display: flex;
+  justify-content: space-around;
   position: relative;
   padding-bottom: 56.25%;
-  width: 100%;
-  height: 0;
-  margin: 20px 0;
 }
 
 .video iframe {
@@ -118,7 +119,23 @@ html {
   height: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+.video-container {
+  text-align: center;
+}
+.video-title {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .rec-videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 800px) {
   #main-menu {
     position: fixed;
     height: 100vh;
@@ -147,23 +164,9 @@ html {
   }
 
   .close-menu {
-    /* display: none; */
     position: absolute;
     top: 15px;
     right: 17px;
     font-size: 2rem;
-  }
-
-  .open-menu {
-    /* display: none; */
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .rec-videos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
   }
 }
