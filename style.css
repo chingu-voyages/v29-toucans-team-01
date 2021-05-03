@@ -149,8 +149,16 @@ html {
 
 .profile-pic{
   border-radius: 50%;
-  padding: 3px 3px;
+  padding:5px;
 }
+
+
+
+.far{
+  padding-right: 5px;
+}
+
+
 /* === Login-In button section === */
 
 .btn {
