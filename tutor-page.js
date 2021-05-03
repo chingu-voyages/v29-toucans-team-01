@@ -36,3 +36,26 @@ function onPlayerStateChange(event) {
 function stopVideo() {
     player.stopVideo();
 }*/
+
+const mainMenu = document.querySelector("#main-menu");
+const openMenu = document.querySelector(".open-menu");
+const closeMenu = document.querySelector(".close-menu");
+// const openMenu = document.querySelector()
+
+openMenu.addEventListener("click", show);
+closeMenu.addEventListener("click", hide);
+
+function show() {
+  if (window.innerWidth < 800) {
+    mainMenu.style.display = "flex";
+    openMenu.style.display = "none";
+    closeMenu.style.display = "flex";
+  }
+}
+
+function hide() {
+  if (window.innerWidth < 800) {
+    mainMenu.style.display = "none";
+    openMenu.style.display = "flex";
+  }
+}
