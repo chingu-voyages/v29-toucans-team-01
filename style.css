@@ -129,6 +129,11 @@ html {
 
 /* === Header section === */
 
+.logo {
+  width: 205px;
+  padding: 5px;
+}
+
 .header-grid{
     width: 100%;
     display: flex;
