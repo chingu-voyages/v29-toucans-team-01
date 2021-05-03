@@ -95,6 +95,13 @@ html {
   padding: 30px;
 }
 
+.rec-videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .videos-section {
   background-color: #43aed9;
   color: white;
@@ -124,15 +131,7 @@ html {
 }
 .video-title {
   margin-top: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .rec-videos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+  padding-bottom: 90px;
 }
 
 @media (max-width: 800px) {
