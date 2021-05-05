@@ -1,6 +1,15 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
 html {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  /* == Keeps the footer on the bottom == */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 * {
@@ -117,6 +126,11 @@ html {
 
 /* === Header section === */
 
+.logo {
+  width: 205px;
+  padding: 5px;
+}
+
 .header-grid {
   width: 100%;
   display: flex;
@@ -128,6 +142,15 @@ html {
 .header-title {
   margin-left: 10px;
   color: #071a40;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.far {
+  padding-right: 5px;
 }
 
 /* === Login-In button section === */
@@ -230,7 +253,133 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
   height: 40px;
   background-color: #f2d3385b;
+  margin-top: auto; /* == Keeps footer at the bottom ==*/
+}
+
+/* === Student Page styles === */
+
+.sectionTitle h1 {
+  text-align: center;
+  padding: 0 60px;
+}
+
+.myTutorProfileSection {
+  background-color: #d5efff;
+}
+
+.tutorTitle {
+  text-align: center;
+  padding: 15px 0 10px 0;
+  font-size: 1.75em;
+}
+
+.card {
+  background-color: #fcfcfc00;
+  border: none;
+}
+
+.card-img,
+.card-img-top {
+  border-radius: 50%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.myStudyVideos {
+  padding: 0 20px;
+}
+
+.myStudyVideos h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.student-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px 0 20px;
+  background-color: #f0f8ff;
+}
+
+.myTutorProfileSection {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.myStudyVideos h1 {
+  text-align: center;
+}
+
+.video-part {
+  width: 100%;
+  padding: 5px;
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.tutorRecs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.TutorTitle {
+  padding: 10px 20px 10px;
+}
+
+.tutorRecs {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0 60px 0;
+}
+
+.tutorRecs h1 {
+  text-align: left;
+  padding: 20px;
+}
+
+.tutorRecVideos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* background-color: rgb(221, 218, 218); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1395px) {
+  .myStudyVideos h1 {
+    text-align: left;
+  }
+  .myTutorProfileSection {
+    margin-right: 10px;
+  }
+  .tutorRecVideos {
+    box-shadow: none;
+  }
+  .video-part {
+    box-shadow: none;
+  }
 }
