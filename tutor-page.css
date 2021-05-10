@@ -84,15 +84,45 @@ html {
   position: relative;
 }
 
-.profile-image span {
+.emoji {
   position: relative;
   font-size: 30px;
   z-index: 2;
   left: 50px;
 }
+.emoji {
+  animation-name: emoji-spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
 
-.profile-image span:hover {
-  border: 1px solid transparent;
+@keyframes emoji-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .student-section-title {
