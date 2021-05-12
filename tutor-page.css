@@ -18,8 +18,14 @@ html {
   align-items: center;
 }
 
+.logo {
+  width: 205px;
+  padding: 5px;
+}
+
 .header-title {
-  padding: 10px;
+  margin-left: 10px;
+  color: #071a40;
 }
 
 .open-menu {
