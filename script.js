@@ -39,7 +39,8 @@ $(document).ready(function(){
 
   function videoSearch(api_key, search, maxResults){
       videos.empty();
-      $.get("https://www.googleapis.com/youtube/v3/search?key=" + api_key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search,function(data){
+      $.get("https://www.googleapis.com/youtube/v3/search?key=" + api_key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search, 
+        function(data){
           console.log(data);
 
           data.items.forEach(item => {
