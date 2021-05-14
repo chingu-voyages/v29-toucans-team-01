@@ -26,10 +26,13 @@
 
 $(document).ready(function(){
 
-  let api_key = "AIzaSyBjeB7NxJ34NhgJIi5swpWT7rEgudCUCO0";
+  let api_key = "AIzaSyB-MlRab6Uu7xRY-B-htrumpC3Pbidr-6k";
   let video = '';
-  var videos = $("#videos");
-
+  let videotwo = '';
+  let videothree = '';
+  let videos = $(".videos");
+  let videoTwo = $(".studentVideotwo");
+  let videoThree = $('.studentVideothree');
   $("#form").submit(function(e){
       e.preventDefault()
       let search = $("#search").val();
@@ -39,21 +42,33 @@ $(document).ready(function(){
 
   function videoSearch(api_key, search, maxResults){
       videos.empty();
+      videoTwo.empty();
+      videoThree.empty();
       $.get("https://www.googleapis.com/youtube/v3/search?key=" + api_key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search, 
         function(data){
           console.log(data);
 
-          data.items.forEach(item => {
-              video = `
-              <iframe width="315" height="200" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>`
-              
-              videos.append(video);
-          })
+          video = `<iframe width="315" height="200" src="http://www.youtube.com/embed/${data.items[0].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
 
-      })
+          videos.append(video);
 
+          videotwo = `<iframe width="315" height="200" src="http://www.youtube.com/embed/${data.items[1].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+
+          videoTwo.append(videotwo);
+          
+          videothree = `<iframe width="315" height="200" src="http://www.youtube.com/embed/${data.items[2].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+
+          videoThree.append(videothree);
+
+            // data.items.forEach(item => {
+            //     video = `
+            //     <iframe width="315" height="200" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>`
+                
+            //     videos.append(video);
+            // })
+
+    })
   }
-
 });
 
    
