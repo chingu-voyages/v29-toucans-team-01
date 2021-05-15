@@ -34,7 +34,7 @@
       <nav>
         <div class="header-grid">
           <div class="header-title">
-            <h2>Tutor Me</h2>
+            <img class="logo" src="images/3.png" alt="Tutor Logo" />
           </div>
           <div class="login-button">
             <!-- onclick="window.location.href='/student-page/index.html'" -->
@@ -183,6 +183,64 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="fab-container">
+          <span class="fab-label" id="meet-team">Meet the Team</span>
+          <div class="fab fab-icon-holder">
+            <i class="fas fa-users"></i>
+          </div>
+          <ul class="fab-options">
+            <li>
+              <span class="fab-label">Ambareen Sultana (PO)</span>
+              <div class="fab-icon-holder">
+                <a href="https://github.com/ambersu123"
+                  ><i class="fas fa-id-badge"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <span class="fab-label">Renee Twolmby(PO)</span>
+              <div class="fab-icon-holder">
+                <a href="https://github.com/rmtwombly"
+                  ><i class="fas fa-id-badge"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <span class="fab-label">Andrew Denson (Dev)</span>
+              <div class="fab-icon-holder">
+                <a href="https://github.com/DrewDen"
+                  ><i class="fas fa-id-badge"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <span class="fab-label">Hugo Ruiz (Dev)</span>
+              <div class="fab-icon-holder">
+                <a href="https://github.com/hruizvil"
+                  ><i class="fas fa-id-badge"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <span class="fab-label">Ashley Christie (Dev)</span>
+              <div class="fab-icon-holder">
+                <a href="https://github.com/ach0319"
+                  ><i class="fas fa-id-badge"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <span class="fab-label">Tamara Harris (Dev)</span>
+              <div class="fab-icon-holder">
+                <a href="https://github.com/CodenameTam"
+                  ><i class="fas fa-id-badge"></i
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- This modal is for the Log-In button inside of the Tutor me Logo -->
       <div
@@ -195,7 +253,12 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Tutor Me</h5>
+              <img
+                class="modal-title"
+                id="exampleModalLabel"
+                src="images/3.png"
+                alt="Tutor Logo"
+              />
               <button
                 type="button"
                 class="btn-close"
@@ -209,7 +272,7 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="floatingInput"
+                    id="floatingInpt"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     placeholder="name@example.com"
                     required
@@ -220,9 +283,10 @@
                   <input
                     type="password"
                     class="form-control"
-                    id="floatingPassword"
+                    id="floatingPassw"
                     minlength="5"
                     placeholder="Password"
+                    required
                   />
                   <label for="floatingPassword">Password</label>
                 </div>
@@ -246,7 +310,12 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="studentmodalLabel">Modal title</h5>
+              <img
+                class="modal-title"
+                id="exampleModalLabel"
+                src="images/3.png"
+                alt="Tutor Logo"
+              />
               <button
                 type="button"
                 class="btn-close"
@@ -254,8 +323,25 @@
                 aria-label="Close"
               ></button>
             </div>
+            <div class="sign-up-title-form">
+              <h5 class="sign-up-title">Sign Up Today!</h5>
+              <h8 class="sign-up-instructions"
+                >It's <b>free</b> and takes <b>less than 30 seconds.</b></h8
+              >
+            </div>
             <div class="modal-body">
               <form class="needs-validation" novalidate>
+                <div class="form-floating my-3 mx-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingName"
+                    minlength="5"
+                    placeholder="Name"
+                    required
+                  />
+                  <label for="floatingName">Name:</label>
+                </div>
                 <div class="form-floating my-3 mx-4">
                   <input
                     type="email"
@@ -265,7 +351,7 @@
                     placeholder="name@example.com"
                     required
                   />
-                  <label for="floatingInput">Email Address</label>
+                  <label for="floatingInput">Email Address:</label>
                 </div>
                 <div class="form-floating my-3 mx-4">
                   <input
@@ -274,16 +360,67 @@
                     id="floatingPassword"
                     minlength="5"
                     placeholder="Password"
+                    required
                   />
-                  <label for="floatingPassword">Password</label>
+                  <label for="floatingPassword">Password:</label>
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingResidence"
+                    minlength="5"
+                    placeholder="Country of Residence"
+                    required
+                  />
+                  <label for="floatingResidence"
+                    >Country of Residence/Time Zone:</label
+                  >
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingLanguage"
+                    minlength="5"
+                    placeholder="Preferred Language"
+                    required
+                  />
+                  <label for="floatingLanguage">Preferred Language:</label>
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="floatingTopic"
+                    minlength="5"
+                    placeholder="Topic"
+                    rows="4"
+                    cols="50"
+                    required
+                  ></textarea>
+                  <label for="floatingTopic"
+                    >What do you wish to be tutored on?</label
+                  >
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="floatingInterests"
+                    minlength="5"
+                    placeholder="Other Interests"
+                    rows="4"
+                    cols="50"
+                    required
+                  ></textarea>
+                  <label for="floatingInterests"
+                    >Other Interests: (list below, seperate with commas)</label
+                  >
                 </div>
                 <div class="modal-footer">
-                  <button
-                    onclick="window.location.href='/student-page/index.html'"
-                    type="submit"
-                    class="btn btn-primary"
-                  >
-                    SUBMIT
+                  <button type="submit" class="btn btn-primary">
+                    <a href="student-page/index.html">SUBMIT</a>
                   </button>
                 </div>
               </form>
@@ -303,7 +440,12 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <img
+                class="modal-title"
+                id="exampleModalLabel"
+                src="images/3.png"
+                alt="Tutor Logo"
+              />
               <button
                 type="button"
                 class="btn-close"
@@ -311,8 +453,27 @@
                 aria-label="Close"
               ></button>
             </div>
+            <div class="sign-up-title-form">
+              <h5 class="sign-up-title">
+                Join our growing community of Educators<br />
+                and create a positive impact<br />
+                in someone's life!
+              </h5>
+              <h8 class="sign-up-instructions"><b> Sign Up Today!</b></h8>
+            </div>
             <div class="modal-body">
               <form class="needs-validation" novalidate>
+                <div class="form-floating my-3 mx-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingName"
+                    minlength="5"
+                    placeholder="Name"
+                    required
+                  />
+                  <label for="floatingName">Name:</label>
+                </div>
                 <div class="form-floating my-3 mx-4">
                   <input
                     type="email"
@@ -322,7 +483,7 @@
                     placeholder="name@example.com"
                     required
                   />
-                  <label for="floatingInput">Email Address</label>
+                  <label for="floatingInput">Email Address:</label>
                 </div>
                 <div class="form-floating my-3 mx-4">
                   <input
@@ -331,8 +492,59 @@
                     id="floatingPassword"
                     minlength="5"
                     placeholder="Password"
+                    required
                   />
-                  <label for="floatingPassword">Password</label>
+                  <label for="floatingPassword">Password:</label>
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingResidence"
+                    minlength="5"
+                    placeholder="Country of Residence"
+                    required
+                  />
+                  <label for="floatingResidence"
+                    >Country of Residence/Time Zone:</label
+                  >
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingLanguage"
+                    minlength="5"
+                    placeholder="Preferred Language"
+                    required
+                  />
+                  <label for="floatingLanguage">Preferred Language:</label>
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="floatingTopic"
+                    minlength="5"
+                    placeholder="Topic"
+                    rows="4"
+                    cols="50"
+                    required
+                  ></textarea>
+                  <label for="floatingTopic">Tutoring Specializations:</label>
+                </div>
+                <div class="form-floating my-3 mx-4">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="floatingInterests"
+                    minlength="5"
+                    placeholder="Other Interests"
+                    rows="4"
+                    cols="50"
+                    required
+                  ></textarea>
+                  <label for="floatingInterests">Tell us about yourself:</label>
                 </div>
                 <div class="modal-footer">
                   <button type="submit" class="btn btn-primary">
