@@ -23,7 +23,7 @@
   });
 })();
 
-function videoSearch(api_key, search, maxResults) {
+const videoSearch = (api_key, search, maxResults) => {
   let video = "";
   let videotwo = "";
   let videothree = "";
@@ -40,9 +40,7 @@ function videoSearch(api_key, search, maxResults) {
       maxResults +
       "&q=" +
       search,
-    function (data) {
-      console.log(data);
-
+    (data) => {
       video = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[0].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
 
       videos.append(video);
@@ -54,79 +52,16 @@ function videoSearch(api_key, search, maxResults) {
       videothree = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[2].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
 
       videoThree.append(videothree);
-
-      // data.items.forEach(item => {
-      //     video = `
-      //     <iframe width="315" height="200" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>`
-
-      //     videos.append(video);
-      // })
     }
   );
-}
+};
 
 window.addEventListener("load", () => {
   console.log("page is loaded");
   let search_val = localStorage.name;
   let api_key = "AIzaSyBd04K-pKR2kkdRMFRA6bF66VisH8DBOBE";
   videoSearch(api_key, search_val, 3);
-
-  // document.getElementById("show").innerHTML = localStorage.name;
-  // var val = document.getElementById("srch").value;
-  // console.log(val);
 });
-
-// $(document).ready(function () {
-//   let video = "";
-//   let videotwo = "";
-//   let videothree = "";
-//   let videos = $(".videos");
-//   let videoTwo = $(".studentVideotwo");
-//   let videoThree = $(".studentVideothree");
-
-//   $("#form").submit(function (e) {
-//     e.preventDefault();
-//     let search = $("#search").val();
-
-//     videoSearch(api_key, search, 3);
-//   });
-
-//   function videoSearch(api_key, search, maxResults) {
-//     videos.empty();
-//     videoTwo.empty();
-//     videoThree.empty();
-//     $.get(
-//       "https://www.googleapis.com/youtube/v3/search?key=" +
-//         api_key +
-//         "&type=video&part=snippet&maxResults=" +
-//         maxResults +
-//         "&q=" +
-//         search,
-//       function (data) {
-//         console.log(data);
-
-//         video = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[0].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
-
-//         videos.append(video);
-
-//         videotwo = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[1].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
-
-//         videoTwo.append(videotwo);
-
-//         videothree = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[2].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
-
-//         videoThree.append(videothree);
-
-//         // data.items.forEach(item => {
-//         //     video = `
-//         //     <iframe width="315" height="200" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>`
-
-//         //     videos.append(video);
-//         // })
-//       }
-//     );
-//   }
-// });
 
 //* This function is for the review system
 
