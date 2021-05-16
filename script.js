@@ -41,15 +41,15 @@ const videoSearch = (api_key, search, maxResults) => {
       "&q=" +
       search,
     (data) => {
-      video = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[0].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+      video = `<iframe width="325" height="225" src="https://www.youtube.com/embed/${data.items[0].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
 
       videos.append(video);
 
-      videotwo = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[1].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+      videotwo = `<iframe width="325" height="225" src="https://www.youtube.com/embed/${data.items[1].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
 
       videoTwo.append(videotwo);
 
-      videothree = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[2].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+      videothree = `<iframe width="325" height="225" src="https://www.youtube.com/embed/${data.items[2].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
 
       videoThree.append(videothree);
     }
