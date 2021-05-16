@@ -56,10 +56,25 @@
         <div class="banner">
           <p>Seeking help?<br />We got you</p>
           <p>What would you like to learn?</p>
-          <div class="searchbar">
-            <input type="text" placeholder="Search" />
-            <button type="submit"><i class="fas fa-search"></i></button>
-          </div>
+          <form action="./tutor_availability.html" method="GET" id="form">
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  class="form-control form-control-sm"
+                  placeholder="Search"
+                /><input
+                    type="button"
+                    value="submit"
+                    class="btn btn-light pb-1"
+                    onclick="submitForm()"
+                  >
+              </input>
+              </div>
+            </div>
+          </form>
         </div>
         <div>
           <img
@@ -574,5 +589,13 @@
     ></script>
 
     <script src="script.js"></script>
+    <script>
+        function submitForm(){
+            if(typeof(localStorage) != "undefined"){
+                localStorage.name = document.getElementById("search").value;
+            }
+            document.getElementById("form").submit();
+        }
+        </script>
   </body>
 </html>

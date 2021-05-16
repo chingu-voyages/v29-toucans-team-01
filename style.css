@@ -395,6 +395,25 @@ figcaption {
   border-radius: 5px;
 }
 
+/* === Section for search bar used on the student page === */
+
+.form-group{
+  height: 100%;
+}
+.input-group{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  height: 100%;
+}
+
+.form-control-sm{
+  
+  padding: 2px 4px;
+
+}
+
+
 @media only screen and (max-width: 1395px) {
   .myStudyVideos h1 {
     text-align: left;

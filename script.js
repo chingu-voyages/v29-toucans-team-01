@@ -23,6 +23,46 @@
   });
 })();
 
+const videoSearch = (api_key, search, maxResults) => {
+  let video = "";
+  let videotwo = "";
+  let videothree = "";
+  let videos = $(".videos");
+  let videoTwo = $(".studentVideotwo");
+  let videoThree = $(".studentVideothree");
+  videos.empty();
+  videoTwo.empty();
+  videoThree.empty();
+  $.get(
+    "https://www.googleapis.com/youtube/v3/search?key=" +
+      api_key +
+      "&type=video&part=snippet&maxResults=" +
+      maxResults +
+      "&q=" +
+      search,
+    (data) => {
+      video = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[0].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+
+      videos.append(video);
+
+      videotwo = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[1].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+
+      videoTwo.append(videotwo);
+
+      videothree = `<iframe width="325" height="225" src="http://www.youtube.com/embed/${data.items[2].id.videoId}" frameborder="0" allowfullscreen></iframe>`;
+
+      videoThree.append(videothree);
+    }
+  );
+};
+
+window.addEventListener("load", () => {
+  console.log("page is loaded");
+  let search_val = localStorage.name;
+  let api_key = "AIzaSyBd04K-pKR2kkdRMFRA6bF66VisH8DBOBE";
+  videoSearch(api_key, search_val, 3);
+});
+
 //* This function is for the review system
 
 var modal = document.getElementById("modal");
