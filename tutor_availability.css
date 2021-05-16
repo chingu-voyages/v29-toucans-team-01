@@ -26,7 +26,8 @@
   font-size: 2rem;
 }
 
-.header-title {
+.logo {
+  width: 205px;
   padding: 10px;
 }
 
