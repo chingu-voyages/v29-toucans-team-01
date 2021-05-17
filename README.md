@@ -36,7 +36,9 @@
 <!--===== ABOUT THE PROJECT =====-->
 ## About The Project
 
-**We will add screenshots here when the app is complete**
+<p align="center">
+    <img src="images/screenshot1.png" alt="screenshot of the app" width="400" height="447">
+    <p>
 
 TutorMe connects Students/information seekers with tutors so that
 They can become more knowledgeable about the subject they are seeking help with and they can connect with the tutors and the students should also be able to filter the educational youtube videos.
