@@ -59,7 +59,7 @@ const videoSearch = (api_key, search, maxResults) => {
 window.addEventListener("load", () => {
   console.log("page is loaded");
   let search_val = localStorage.name;
-  let api_key = "AIzaSyBd04K-pKR2kkdRMFRA6bF66VisH8DBOBE";
+  let api_key = "AIzaSyAYP9dAggDkepy85HwvFIYDdsKPW6mJElw";
   videoSearch(api_key, search_val, 3);
 });
 
