@@ -1,601 +1,410 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Tutor Me</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Home | Tutor Me</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Nunito:wght@200;300;400&display=swap"
+    rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" />
+</head>
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"
-    />
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <div class="header-grid">
-          <div class="header-title">
+<body>
+  <header>
+    <nav>
+      <div class="header-grid">
+        <div class="header-title">
+          <a href="/index.html">
             <img class="logo" src="images/3.png" alt="Tutor Logo" />
+          </a>
+        </div>
+        <div class="login-button">
+          <!-- onclick="window.location.href='/student-page/index.html'" -->
+          <button type="button" class="btn btn btn-light btn-sm text-uppercase" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Log In
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="banner-grid">
+      <div class="banner">
+        <h2>Seeking help?</h2>
+        <h5>We got you.</h5>
+        <p>Start a search now to learn about something
+          new or find an expert tutor who could help.
+          If you’re seeking to teach others and become a tutor, please sign-up below!</p>
+        <h4>What would you like to learn?</h4>
+        <form action="/tutor-availability/tutor_availability.html" method="GET" id="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" name="search" id="search" class="form-control form-control-sm"
+                placeholder="Search" /><input type="button" value="Search" class="btn home-submit"
+                onclick="submitForm()">
+              </input>
+            </div>
           </div>
-          <div class="login-button">
-            <!-- onclick="window.location.href='/student-page/index.html'" -->
-            <button
-              type="button"
-              class="btn btn btn-light btn-sm text-uppercase"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Log In
+        </form>
+      </div>
+      <div>
+        <img src="./images/what-every-teacher-should-know-about-the-science-of-learning.jpg" class="img-fluid"
+          alt="..." />
+      </div>
+    </div>
+
+    <section class="info">
+      <div class="infoHeading">
+        <h3>What We Do</h3>
+        <p class="infoSubHeading">
+          Here's more about why Tutor Me is the best resource for bettering
+          yourself or others!
+        </p>
+      </div>
+
+      <div class="infoBlocks">
+        <div class="infoBlock a">
+          <span class="infoIcon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <h4>It's Free</h4>
+          <p>No cost, no risk to you with using Tutor Me</p>
+        </div>
+
+        <div class="infoBlock b">
+          <span class="infoIcon">
+            <i class="fas fa-user-check"></i>
+          </span>
+          <h4>No Hassles</h4>
+          <p>Feel free to cancel or delete your account at anytime!</p>
+        </div>
+
+        <div class="infoBlock c">
+          <span class="infoIcon">
+            <i class="fas fa-hands-helping"></i>
+          </span>
+          <h4>Genuine Help</h4>
+          <p>
+            If you want to learn or teach, this is a safe space for all
+            levels.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="signup-grid">
+        <div class="student-signup-grid middle-border">
+          <h5>Help Yourself</h5>
+          <h2>Become a Student</h2>
+          <div>
+            <button type="button" class="btn btn-sm text-uppercase" data-bs-toggle="modal"
+              data-bs-target="#studentmodal">
+              SIGN UP
             </button>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="banner-grid">
-        <div class="banner">
-          <p>Seeking help?<br />We got you</p>
-          <p>What would you like to learn?</p>
-          <form action="./tutor_availability.html" method="GET" id="form">
-            <div class="form-group">
-              <div class="input-group">
-                <input
-                  type="text"
-                  name="search"
-                  id="search"
-                  class="form-control form-control-sm"
-                  placeholder="Search"
-                /><input
-                    type="button"
-                    value="submit"
-                    class="btn btn-light pb-1"
-                    onclick="submitForm()"
-                  >
-              </input>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div>
-          <img
-            src="./images/what-every-teacher-should-know-about-the-science-of-learning.jpg"
-            class="img-fluid"
-            alt="..."
-          />
+        <div class="student-signup-grid">
+          <h5>Help Others</h5>
+          <h2>Become a Tutor</h2>
+          <div>
+            <button type="button" class="btn btn-sm text-uppercase" data-bs-toggle="modal"
+              data-bs-target="#tutormodal">
+              SIGN UP
+            </button>
+          </div>
         </div>
       </div>
+    </section>
 
-      <section class="info">
-        <div class="infoHeading">
-          <h3>What We Do</h3>
-          <p class="infoSubHeading">
-            Here's more about why Tutor Me is the best resource for bettering
-            yourself or others!
-          </p>
-        </div>
+    <!-- Testimonials Carousel-->
 
-        <div class="infoBlocks">
-          <div class="infoBlock a">
-            <span class="infoIcon">
-              <i class="fas fa-heart"></i>
-            </span>
-            <h4>It's Free</h4>
-            <p>No cost, no risk to you with using Tutor Me</p>
-          </div>
-
-          <div class="infoBlock b">
-            <span class="infoIcon">
-              <i class="fas fa-user-check"></i>
-            </span>
-            <h4>No Hassles</h4>
-            <p>Feel free to cancel or delete your account at anytime!</p>
-          </div>
-
-          <div class="infoBlock c">
-            <span class="infoIcon">
-              <i class="fas fa-hands-helping"></i>
-            </span>
-            <h4>Genuine Help</h4>
-            <p>
-              If you want to learn or teach, this is a safe space for all
-              levels.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="signup-grid">
-          <div class="student-signup-grid middle-border">
-            <p>Help Yourself<br />Become a Student</p>
-            <div>
-              <button
-                type="button"
-                class="btn btn btn-light btn-sm text-uppercase"
-                data-bs-toggle="modal"
-                data-bs-target="#studentmodal"
-              >
-                SIGN UP
-              </button>
-            </div>
-          </div>
-          <div class="student-signup-grid">
-            <p>Help Others<br />Become a Tutor</p>
-            <div>
-              <button
-                type="button"
-                class="btn btn btn-light btn-sm text-uppercase"
-                data-bs-toggle="modal"
-                data-bs-target="#tutormodal"
-              >
-                SIGN UP
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonials-container">
-        <div class="testimonials-heading">
-          <h3>What Tutors Are Saying</h3>
-        </div>
-        <div class="testimonials">
+    <section class="testimonials-container">
+      <div class="testimonials-heading">
+        <h3>What Tutors Are Saying</h3>
+        <p>Satisfying students and teachers one topic at a time.</p>
+      </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
           <div class="testimonial-block">
             <div class="img-container">
-              <img src="./account1.jpg" />
+              <img src="images/account1.jpg" />
             </div>
             <div class="quote">
-              <q
-                >Thanks to my MyTutor, I was able to gain real-time experience
+              <q>Thanks to my MyTutor, I was able to gain real-time experience
                 that would have taken me countless hours to learn myself.
               </q>
               <p>Programming Student</p>
             </div>
           </div>
+        </div>
+        <div class="carousel-item">
           <div class="testimonial-block">
             <div class="img-container">
-              <img src="./account2.jpg" />
+              <img src="images/account2.jpg" />
             </div>
             <div class="quote">
-              <q
-                >The beautiful thing about this site, is that people are eager
-                to learn!</q
-              >
+              <q>The beautiful thing about this site, is that people are eager
+                to learn!</q>
               <p>Math Tutor</p>
             </div>
           </div>
+        </div>
+        <div class="carousel-item">
           <div class="testimonial-block">
             <div class="img-container">
-              <img src="./account3.jpg" />
+              <img src="images/account3.jpg" />
             </div>
             <div class="quote">
-              <q
-                >Finally! A website that tracks the best learning videos on
+              <q>Finally! A website that tracks the best learning videos on
                 YouTube.
               </q>
               <p>English Tutor</p>
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="fab-container">
-          <span class="fab-label" id="meet-team">Meet the Team</span>
-          <div class="fab fab-icon-holder">
-            <i class="fas fa-users"></i>
-          </div>
-          <ul class="fab-options">
-            <li>
-              <span class="fab-label">Ambareen Sultana (PO)</span>
-              <div class="fab-icon-holder">
-                <a href="https://github.com/ambersu123"
-                  ><i class="fas fa-id-badge"></i
-                ></a>
-              </div>
-            </li>
-            <li>
-              <span class="fab-label">Renee Twolmby(PO)</span>
-              <div class="fab-icon-holder">
-                <a href="https://github.com/rmtwombly"
-                  ><i class="fas fa-id-badge"></i
-                ></a>
-              </div>
-            </li>
-            <li>
-              <span class="fab-label">Andrew Denson (Dev)</span>
-              <div class="fab-icon-holder">
-                <a href="https://github.com/DrewDen"
-                  ><i class="fas fa-id-badge"></i
-                ></a>
-              </div>
-            </li>
-            <li>
-              <span class="fab-label">Hugo Ruiz (Dev)</span>
-              <div class="fab-icon-holder">
-                <a href="https://github.com/hruizvil"
-                  ><i class="fas fa-id-badge"></i
-                ></a>
-              </div>
-            </li>
-            <li>
-              <span class="fab-label">Ashley Christie (Dev)</span>
-              <div class="fab-icon-holder">
-                <a href="https://github.com/ach0319"
-                  ><i class="fas fa-id-badge"></i
-                ></a>
-              </div>
-            </li>
-            <li>
-              <span class="fab-label">Tamara Harris (Dev)</span>
-              <div class="fab-icon-holder">
-                <a href="https://github.com/CodenameTam"
-                  ><i class="fas fa-id-badge"></i
-                ></a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
+    </div>
+    </section>
 
-      <!-- This modal is for the Log-In button inside of the Tutor me Logo -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-md">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img
-                class="modal-title"
-                id="exampleModalLabel"
-                src="images/3.png"
-                alt="Tutor Logo"
-              />
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+    <!-- About The Team Modal-->
+    <section>
+      <div class="fab-container">
+        <span class="fab-label" id="meet-team">Meet the Team</span>
+        <div class="fab fab-icon-holder">
+          <i class="fas fa-users"></i>
+        </div>
+        <ul class="fab-options">
+          <li>
+            <span class="fab-label">Ambareen Sultana (PO)</span>
+            <div class="fab-icon-holder">
+              <a href="https://github.com/ambersu123"><i class="fas fa-id-badge"></i></a>
             </div>
-            <div class="modal-body">
-              <form class="needs-validation" novalidate>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="floatingInpt"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    placeholder="name@example.com"
-                    required
-                  />
-                  <label for="floatingInput">Email Address</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="floatingPassw"
-                    minlength="5"
-                    placeholder="Password"
-                    required
-                  />
-                  <label for="floatingPassword">Password</label>
-                </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary">SUBMIT</button>
-                </div>
-              </form>
+          </li>
+          <li>
+            <span class="fab-label">Renee Twolmby(PO)</span>
+            <div class="fab-icon-holder">
+              <a href="https://github.com/rmtwombly"><i class="fas fa-id-badge"></i></a>
             </div>
+          </li>
+          <li>
+            <span class="fab-label">Andrew Denson (Dev)</span>
+            <div class="fab-icon-holder">
+              <a href="https://github.com/DrewDen"><i class="fas fa-id-badge"></i></a>
+            </div>
+          </li>
+          <li>
+            <span class="fab-label">Hugo Ruiz (Dev)</span>
+            <div class="fab-icon-holder">
+              <a href="https://github.com/hruizvil"><i class="fas fa-id-badge"></i></a>
+            </div>
+          </li>
+          <li>
+            <span class="fab-label">Ashley Christie (Dev)</span>
+            <div class="fab-icon-holder">
+              <a href="https://github.com/ach0319"><i class="fas fa-id-badge"></i></a>
+            </div>
+          </li>
+          <li>
+            <span class="fab-label">Tamara Harris (Dev)</span>
+            <div class="fab-icon-holder">
+              <a href="https://github.com/CodenameTam"><i class="fas fa-id-badge"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- This modal is for the Log-In button inside of the Tutor me Logo -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="modal-title" id="exampleModalLabel" src="images/3.png" alt="Tutor Logo" />
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="form-floating my-3 mx-4">
+                <input type="email" class="form-control" id="floatingInpt"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="name@example.com" required />
+                <label for="floatingInput">Email Address</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="password" class="form-control" id="floatingPassw" minlength="5" placeholder="Password"
+                  required />
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- This modal is for the Student Sign-Up Section-->
-      <div
-        class="modal fade"
-        id="studentmodal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img
-                class="modal-title"
-                id="exampleModalLabel"
-                src="images/3.png"
-                alt="Tutor Logo"
-              />
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="sign-up-title-form">
-              <h5 class="sign-up-title">Sign Up Today!</h5>
-              <h8 class="sign-up-instructions"
-                >It's <b>free</b> and takes <b>less than 30 seconds.</b></h8
-              >
-            </div>
-            <div class="modal-body">
-              <form class="needs-validation" novalidate>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingName"
-                    minlength="5"
-                    placeholder="Name"
-                    required
-                  />
-                  <label for="floatingName">Name:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="floatingInput"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    placeholder="name@example.com"
-                    required
-                  />
-                  <label for="floatingInput">Email Address:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="floatingPassword"
-                    minlength="5"
-                    placeholder="Password"
-                    required
-                  />
-                  <label for="floatingPassword">Password:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingResidence"
-                    minlength="5"
-                    placeholder="Country of Residence"
-                    required
-                  />
-                  <label for="floatingResidence"
-                    >Country of Residence/Time Zone:</label
-                  >
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingLanguage"
-                    minlength="5"
-                    placeholder="Preferred Language"
-                    required
-                  />
-                  <label for="floatingLanguage">Preferred Language:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <textarea
-                    type="text"
-                    class="form-control"
-                    id="floatingTopic"
-                    minlength="5"
-                    placeholder="Topic"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                  <label for="floatingTopic"
-                    >What do you wish to be tutored on?</label
-                  >
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <textarea
-                    type="text"
-                    class="form-control"
-                    id="floatingInterests"
-                    minlength="5"
-                    placeholder="Other Interests"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                  <label for="floatingInterests"
-                    >Other Interests: (list below, seperate with commas)</label
-                  >
-                </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary">
-                    <a href="student-page/index.html">SUBMIT</a>
-                  </button>
-                </div>
-              </form>
-            </div>
+    <!-- This modal is for the Student Sign-Up Section-->
+    <div class="modal fade" id="studentmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="modal-title" id="exampleModalLabel" src="images/3.png" alt="Tutor Logo" />
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="sign-up-title-form">
+            <h5 class="sign-up-title">Sign Up Today!</h5>
+            <h8 class="sign-up-instructions">It's <b>free</b> and takes <b>less than 30 seconds.</b></h8>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="form-floating my-3 mx-4">
+                <input type="text" class="form-control" id="floatingName" minlength="5" placeholder="Name" required />
+                <label for="floatingName">Name:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="email" class="form-control" id="floatingInput"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="name@example.com" required />
+                <label for="floatingInput">Email Address:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="password" class="form-control" id="floatingPassword" minlength="5" placeholder="Password"
+                  required />
+                <label for="floatingPassword">Password:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="text" class="form-control" id="floatingResidence" minlength="5"
+                  placeholder="Country of Residence" required />
+                <label for="floatingResidence">Country of Residence/Time Zone:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="text" class="form-control" id="floatingLanguage" minlength="5"
+                  placeholder="Preferred Language" required />
+                <label for="floatingLanguage">Preferred Language:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <textarea type="text" class="form-control" id="floatingTopic" minlength="5" placeholder="Topic" rows="4"
+                  cols="50" required></textarea>
+                <label for="floatingTopic">What do you wish to be tutored on?</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <textarea type="text" class="form-control" id="floatingInterests" minlength="5"
+                  placeholder="Other Interests" rows="4" cols="50" required></textarea>
+                <label for="floatingInterests">Other Interests: (list below, seperate with commas)</label>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">
+                  <a href="student-page/index.html">SUBMIT</a>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- This modal is for the Tutor Sign-Up section -->
-      <div
-        class="modal fade"
-        id="tutormodal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img
-                class="modal-title"
-                id="exampleModalLabel"
-                src="images/3.png"
-                alt="Tutor Logo"
-              />
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="sign-up-title-form">
-              <h5 class="sign-up-title">
-                Join our growing community of Educators<br />
-                and create a positive impact<br />
-                in someone's life!
-              </h5>
-              <h8 class="sign-up-instructions"><b> Sign Up Today!</b></h8>
-            </div>
-            <div class="modal-body">
-              <form class="needs-validation" novalidate>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingName"
-                    minlength="5"
-                    placeholder="Name"
-                    required
-                  />
-                  <label for="floatingName">Name:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="floatingInput"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    placeholder="name@example.com"
-                    required
-                  />
-                  <label for="floatingInput">Email Address:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="floatingPassword"
-                    minlength="5"
-                    placeholder="Password"
-                    required
-                  />
-                  <label for="floatingPassword">Password:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingResidence"
-                    minlength="5"
-                    placeholder="Country of Residence"
-                    required
-                  />
-                  <label for="floatingResidence"
-                    >Country of Residence/Time Zone:</label
-                  >
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingLanguage"
-                    minlength="5"
-                    placeholder="Preferred Language"
-                    required
-                  />
-                  <label for="floatingLanguage">Preferred Language:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <textarea
-                    type="text"
-                    class="form-control"
-                    id="floatingTopic"
-                    minlength="5"
-                    placeholder="Topic"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                  <label for="floatingTopic">Tutoring Specializations:</label>
-                </div>
-                <div class="form-floating my-3 mx-4">
-                  <textarea
-                    type="text"
-                    class="form-control"
-                    id="floatingInterests"
-                    minlength="5"
-                    placeholder="Other Interests"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                  <label for="floatingInterests">Tell us about yourself:</label>
-                </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary">
-                    <a href="tutor-page.html">SUBMIT</a>
-                  </button>
-                </div>
-              </form>
-            </div>
+    <!-- This modal is for the Tutor Sign-Up section -->
+    <div class="modal fade" id="tutormodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="modal-title" id="exampleModalLabel" src="images/3.png" alt="Tutor Logo" />
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="sign-up-title-form">
+            <h5 class="sign-up-title">
+              Join our growing community of Educators<br />
+              and create a positive impact<br />
+              in someone's life!
+            </h5>
+            <h8 class="sign-up-instructions"><b> Sign Up Today!</b></h8>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="form-floating my-3 mx-4">
+                <input type="text" class="form-control" id="floatingName" minlength="5" placeholder="Name" required />
+                <label for="floatingName">Name:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="email" class="form-control" id="floatingInput"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="name@example.com" required />
+                <label for="floatingInput">Email Address:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="password" class="form-control" id="floatingPassword" minlength="5" placeholder="Password"
+                  required />
+                <label for="floatingPassword">Password:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="text" class="form-control" id="floatingResidence" minlength="5"
+                  placeholder="Country of Residence" required />
+                <label for="floatingResidence">Country of Residence/Time Zone:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <input type="text" class="form-control" id="floatingLanguage" minlength="5"
+                  placeholder="Preferred Language" required />
+                <label for="floatingLanguage">Preferred Language:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <textarea type="text" class="form-control" id="floatingTopic" minlength="5" placeholder="Topic" rows="4"
+                  cols="50" required></textarea>
+                <label for="floatingTopic">Tutoring Specializations:</label>
+              </div>
+              <div class="form-floating my-3 mx-4">
+                <textarea type="text" class="form-control" id="floatingInterests" minlength="5"
+                  placeholder="Other Interests" rows="4" cols="50" required></textarea>
+                <label for="floatingInterests">Tell us about yourself:</label>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">
+                  <a href="/tutor-page/tutor-page.html">SUBMIT</a>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <h5>
-        Tutor Me
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-      </h5>
-    </footer>
+  <footer>
+    <p>
+      Tutor Me
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </p>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
-    <script>
-        function submitForm(){
-            if(typeof(localStorage) != "undefined"){
-                localStorage.name = document.getElementById("search").value;
-            }
-            document.getElementById("form").submit();
-        }
-        </script>
-  </body>
+  <script src="/js/script.js"></script>
+  <script>
+    function submitForm() {
+      if (typeof (localStorage) != "undefined") {
+        localStorage.name = document.getElementById("search").value;
+      }
+      document.getElementById("form").submit();
+    }
+  </script>
+</body>
+
 </html>
