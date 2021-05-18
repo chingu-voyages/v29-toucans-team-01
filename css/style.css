@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body {
@@ -11,7 +10,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 p {
@@ -77,8 +76,12 @@ p {
   padding-right: 10px;
 }
 
-.banner h1, h2, h3, h4, h5{
-  font-family: 'Balthazar', sans-serif;
+.banner h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Balthazar", sans-serif;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -113,7 +116,6 @@ img {
 .searchbar input {
   width: 70%;
 }
-
 
 /*===== Information Section =====*/
 
@@ -151,11 +153,11 @@ img {
 }
 
 .b {
-  background-color:#117dbf;
+  background-color: #117dbf;
 }
 
 .c {
-  background-color:#43aed9;
+  background-color: #43aed9;
 }
 
 .infoBlock h4 {
@@ -243,7 +245,8 @@ img {
 }
 
 @media only screen and (max-width: 900px) {
-  .testimonials-container::after, .testimonials-container::before {
+  .testimonials-container::after,
+  .testimonials-container::before {
     display: none;
   }
 }
@@ -261,7 +264,7 @@ img {
   flex-flow: row nowrap;
   justify-content: center;
   padding: 40px 0;
-  min-height: 300px;;
+  min-height: 300px;
 }
 
 .testimonial-block .img-container img {
@@ -421,23 +424,22 @@ figcaption {
 
 /* === Section for search bar used on the student page === */
 
-.form-group{
+.form-group {
   width: 30vw;
 }
-.input-group>.form-control {
+.input-group > .form-control {
   border-radius: 10px;
 }
 
-.input-group{
+.input-group {
   display: flex;
   flex-direction: row;
   align-content: center;
 }
 
-.form-control-sm{
+.form-control-sm {
   padding: 2px 4px;
 }
-
 
 @media only screen and (max-width: 1395px) {
   .myStudyVideos h1 {
@@ -713,16 +715,6 @@ textarea {
   background: #0d518c;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ===== Tutor Availability ===== */
 
 * {
@@ -862,13 +854,6 @@ textarea {
   }
 }
 
-
-
-
-
-
-
-
 /*===== Tutor Page Styles =====*/
 
 .header-grid {
@@ -883,11 +868,6 @@ textarea {
 .logo {
   width: 205px;
   padding: 5px;
-}
-
-.header-title {
-  margin-left: 10px;
-  color: #071a40;
 }
 
 .open-menu {
@@ -913,8 +893,8 @@ textarea {
   /* border: 1px solid green; */
 }
 .student-subtitle {
-  background-color: #0d518c;
-  color: white;
+  background-color: aliceblue;
+  color: #0d518c;
   font-weight: bold;
   padding-bottom: 20px;
 }
